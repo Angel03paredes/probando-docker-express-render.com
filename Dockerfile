@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:16
 
 RUN mkdir -p /usr/src/app
 
@@ -12,4 +12,4 @@ COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["node", "index.js"]
